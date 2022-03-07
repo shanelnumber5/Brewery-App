@@ -1,0 +1,123 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/* Portrait layout (default) */
+
+body {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: black;
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 12px;
+    height: 100vh;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 10px) env(safe-area-inset-right, 10px) env(safe-area-inset-bottom, 10px) env(safe-area-inset-left, 10px);
+    text-transform: uppercase;
+    width: 100%;
+}
+
+
+/* Portrait layout (default) */
+
+.app {
+    position: absolute;
+    /* position in the center of the screen */
+    height: 50px;
+    /* text area height */
+    width: 225px;
+    /* text area width */
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    /* image height is 200px (bottom 20px are overlapped with text) */
+    margin: 20px 20px 20px 20px;
+    /* offset vertical: half of image height and text area height */
+    /* offset horizontal: half of text area width */
+}
+
+
+/* Landscape layout (with min-width) */
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position: center;
+        padding: 75px 75px 75px 75px;
+        /* padding-top + padding-bottom + text area = image height */
+        margin: 75px 75px 75px 75px;
+        /* offset vertical: half of image height */
+        /* offset horizontal: half of image width and text area width */
+    }
+}
+
+.container {
+    border-style: solid;
+    background-color: #0a1efa;
+    align-items: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.row {
+    display: flex;
+    padding: 3em;
+}
+
+.column {
+    flex: 50%;
+    text-align: center;
+}
+
+.GeneratedMarquee {
+    font-family: 'GravitasOne-Regular';
+    font-size: 50px;
+    text-align: center;
+    line-height: 1em;
+    color: #e99d04;
+    background-color: #050505;
+    padding: 1em;
+    flex: 50%
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
+}
