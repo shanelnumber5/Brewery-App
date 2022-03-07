@@ -42,13 +42,13 @@ body {
     font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
     font-size: 12px;
     height: 100vh;
-    margin: 20px;
-    padding: 20px;
+    padding: 5%;
+    margin-right: 5%;
     align-items: center;
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
-    padding: env(safe-area-inset-top, 10px) env(safe-area-inset-right, 10px) env(safe-area-inset-bottom, 10px) env(safe-area-inset-left, 10px);
+    padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
     text-transform: uppercase;
-    width: 100%;
+    width: 98%;
 }
 
 
@@ -59,12 +59,12 @@ body {
     /* position in the center of the screen */
     height: 50px;
     /* text area height */
-    width: 225px;
+    width: 100%;
     /* text area width */
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    padding: 3%;
     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin: 20px 20px 20px 20px;
+    margin: 3%;
     /* offset vertical: half of image height and text area height */
     /* offset horizontal: half of text area width */
 }
@@ -75,9 +75,9 @@ body {
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position: center;
-        padding: 75px 75px 75px 75px;
+        padding: 3%;
         /* padding-top + padding-bottom + text area = image height */
-        margin: 75px 75px 75px 75px;
+        margin: 3%;
         /* offset vertical: half of image height */
         /* offset horizontal: half of image width and text area width */
     }
@@ -88,7 +88,7 @@ body {
     background-color: #0a1efa;
     align-items: center;
     padding: 2%;
-    margin: 2%;
+    margin: 1%;
 }
 
 * {
@@ -107,10 +107,10 @@ body {
 
 .GeneratedMarquee {
     font-family: 'GravitasOne-Regular';
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     line-height: 1em;
-    color: #e99d04;
+    color: white;
     background-color: #050505;
     padding: 1em;
     flex: 50%
