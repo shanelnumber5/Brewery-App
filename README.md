@@ -1,2 +1,2 @@
-# My brewery app
+# My MT Brewery App
  Brewery App 
