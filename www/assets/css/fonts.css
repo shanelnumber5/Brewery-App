@@ -1,6 +1,13 @@
 @font-face {
-    font-family: 'PressStart2P-Regular';
-    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-family: 'AmaticSC-Bold';
+    src: url('../fonts/AmaticSC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'AmaticSC-Regular';
+    src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,17 +20,24 @@
 }
 
 * {
-    font-family: 'PressStart2P-Regular';
-    color: #050000;
-    font-size: 14px;
+    font-family: 'Times New Roman';
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'AmaticSC-Bold';
+    font-size: 50px;
+    margin: 0px;
+    overflow: visible;
+    padding: 0px;
     text-align: center;
 }
 
 h2 {
-    font-family: 'PressStart2P-Regular';
-    font-size: 24px;
-    margin: 0px;
+    font-family: 'AmaticSC-Bold';
+    font-size: 40px;
     overflow: visible;
-    padding: 0px;
     text-align: center;
 }
