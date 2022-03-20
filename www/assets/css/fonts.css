@@ -13,19 +13,17 @@
 }
 
 * {
-    font-family: 'Georgia';
-    color: white;
+    font-family: 'PressStart2P-Regular';
+    color: #050000;
     font-size: 14px;
-    text-align: left;
-    font-weight: bold;
+    text-align: center;
 }
 
 h2 {
-    font-family: 'Georgia';
+    font-family: 'PressStart2P-Regular';
     font-size: 24px;
     margin: 0px;
     overflow: visible;
     padding: 0px;
     text-align: center;
-    font-weight: bold;
 }
