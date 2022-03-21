@@ -22,8 +22,9 @@
 * {
     font-family: 'Times New Roman';
     color: white;
-    font-size: 30px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
+    align-items: center;
 }
 
 h1 {
@@ -38,6 +39,13 @@ h1 {
 h2 {
     font-family: 'AmaticSC-Bold';
     font-size: 40px;
+    overflow: visible;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'AmaticSC-Bold';
+    font-size: 30px;
     overflow: visible;
     text-align: center;
 }
