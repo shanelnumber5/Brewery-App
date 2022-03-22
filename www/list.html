@@ -9,8 +9,6 @@
     <script src="cordova.js"></script>
     <script src="js/index.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/imageMapResizer.min.js"></script>
-    <script src="js/imageMapResizer.js"></script>
     <link rel="icon" href="./assets/images/paper-brew.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
@@ -25,17 +23,24 @@
             <marquee class="GeneratedMarquee" direction="left" scrollamount="4" behavior="scroll">Current MT Breweries
             </marquee>
             <p class="container">
-                <img src="./assets/images/breweries/brew-map.png" alt="A map of all the current breweries in MT"
-                    width="100%" usemap="#brewmap">
-
-                <map name="brewmap">
-                    <area a href="2-basset-brewery.html" alt="2 Basset Brewery" shape="rect" coords="334,245,356,266">
-                    <area a href="406-kitchen-and-tap-room.html" alt="406 Kitchen and Tap Room" shape="rect" coords="482,234,526,262">
-                    <area a href="cabinet-mountain.html" alt="Cabinet-Mountain" shape="rect" coords="53,63,87,85">
-
-                </map>
-            </p>
-            <p>
+                <div class="row">
+                    <div class="column">
+                        <ul>
+                            <h4>Billings</h4>
+                            <li><a href="406-kitchen-and-tap-room.html">406 Kitchen & Tap Room</a></li>
+                        </ul>
+                        <ul>
+                            <h4>Libby</h4>
+                            <li><a href="cabinet-mountain.html">Cabinet Mountain Brewing Co.</a></li>
+                        </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <h4>White Sulphur Springs</h4>
+                                <li><a href="2-basset-brewery.html">2 Basset Brewery</a></li>
+                            </ul>
+                        </div>
+                        </div>
                 <div class="row">
                     <div class="column">
                         <h2>Buy A Physical MT Brewery Passport Today!</h2>
@@ -43,7 +48,9 @@
                             <img src="./assets/images/paper-brew.png" alt="MT Brewery Passport" style="width:15%" ;></a>
                     </div>
                     <div class="column">
-                        <a href="list.html"><h2>View the Breweries in a List Based on Location Instead</h2><img src="./assets/images/list.png" alt="List of current Breweries" style="width:50%" ;></a>
+                        <h2>Click the Map to Go Back</h2>
+                        <a href="map.html">
+                            <img src="./assets/images/back.png" alt="Back Button" style="width:50%" ;></a>
                     </div>
                 </div>
             </p>
@@ -53,4 +60,3 @@
 </body>
 
 </html>
-
