@@ -45,13 +45,13 @@ a:hover {
 
 .row {
     display: flex;
-    padding: 2%;
+    padding: 1%;
 }
 
 .column {
     flex: 50%;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
 }
 
 .GeneratedMarquee {
