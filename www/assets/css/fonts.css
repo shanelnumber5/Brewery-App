@@ -22,7 +22,7 @@
 * {
     font-family: 'Times New Roman';
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     align-items: center;
 }
@@ -52,7 +52,7 @@ h3 {
 
 h4 {
     font-family: 'AmaticSC-Bold';
-    font-size: 40px;
+    font-size: 30px;
     overflow: visible;
     text-align: center;
     text-decoration: underline;
