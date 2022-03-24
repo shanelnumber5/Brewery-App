@@ -22,9 +22,11 @@
 * {
     font-family: 'Times New Roman';
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     text-align: left;
     align-items: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -56,4 +58,8 @@ h4 {
     overflow: visible;
     text-align: center;
     text-decoration: underline;
+    padding: 0px;
+    margin-bottom: -5px;
+    margin-top: 15px;
 }
+

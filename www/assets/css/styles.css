@@ -9,6 +9,7 @@
 * {
     box-sizing: border-box;
     line-height: normal;
+    margin-bottom: 5px;
 }
 
 a:link {
@@ -46,12 +47,14 @@ a:hover {
 .row {
     display: flex;
     padding: 1%;
+    margin-top: 0px;
 }
 
 .column {
     flex: 50%;
     text-align: center;
     padding: 1%;
+    margin: 0;
 }
 
 .GeneratedMarquee {
@@ -71,11 +74,15 @@ a:hover {
     border-style: solid;
     border-color: black;
     padding: 1em;
+    margin-bottom: 15px;
+}
+
+.ul {
+    margin-top: -10px;
+    padding-top: -5%;
 }
 
 .li {
-    font-family: 'Times New Roman';
     overflow: visible;
     text-align: left;
-    line-height: 200%;
 }
