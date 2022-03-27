@@ -1,56 +1,938 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="ElectronicBrewery Passport">
-    <meta name="author" content="Shanel Locke">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MT Brewery Passport</title>
-    <script src="cordova.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/imageMapResizer.min.js"></script>
-    <script src="js/imageMapResizer.js"></script>
-    <link rel="icon" href="./assets/images/paper-brew.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="ElectronicBrewery Passport">
+        <meta name="author" content="Shanel Locke">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MT Brewery Passport</title>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/jquery.js"></script>
+        <link rel="icon" href="./assets/images/paper-brew.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css" />
 </head>
 
 <body>
-    <div id="loader"></div>
-    <!-- Everything in your body should go under here-->
-    <div class="mobile-container">
-        <div class="container">
-            <marquee class="GeneratedMarquee" direction="left" scrollamount="4" behavior="scroll">Current MT Breweries
-            </marquee>
-            <p class="container">
-                <img src="./assets/images/breweries/brew-map.png" alt="A map of all the current breweries in MT"
-                    width="100%" usemap="#brewmap">
+        <div id="loader"></div>
+        <!-- Everything in your body should go under here-->
+        <div class="mobile-container">
+                <div class="container">
+                        <marquee class="GeneratedMarquee" direction="left" scrollamount="4" behavior="scroll">Current MT
+                                Breweries
+                        </marquee>
 
-                <map name="brewmap">
-                    <area a href="2-basset-brewery.html" alt="2 Basset Brewery" shape="rect" coords="334,245,356,266">
-                    <area a href="406-kitchen-and-tap-room.html" alt="406 Kitchen and Tap Room" shape="rect" coords="482,234,526,262">
-                    <area a href="cabinet-mountain.html" alt="Cabinet-Mountain" shape="rect" coords="53,63,87,85">
+                        <!--Brewery List and Locations-->
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+                                <p class="container">
+                                        <img src="./assets/images/breweries/brew-map.png"
+                                                alt="A map of all the current breweries in MT">
+                                        <div class="mySlides fade">
+                                                <div class="row">
+                                                        <div class="column">
+                                                                <!--Anaconda-->
+                                                                <ul>
+                                                                        <h4>Anaconda</h4>
+                                                                        <li><img src="./assets/images/breweries/smelter-city-brewing.png"
+                                                                                        alt="Smelter City Brewing"
+                                                                                        style="width:12%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="smelter-city-brewing.html">Smelter
+                                                                                        City Brewing</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Belgrade-->
+                                                                <ul>
+                                                                        <h4>Belgrade</h4>
+                                                                        <li><img src="./assets/images/breweries/bar-3-bbq.png"
+                                                                                        alt="Bar 3 BBQ"
+                                                                                        style="width:11%" ;>
+                                                                                &nbsp;<a href="bar-3-bbq.html">Bar 3
+                                                                                        BBQ</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/madison-river-brewing-company.png"
+                                                                                        alt="Madison River Brewing Co."
+                                                                                        style="width:15%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="madison-river-brewing-company.html">Madison
+                                                                                        River Brewing Co.</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Belt-->
+                                                                <ul>
+                                                                        <h4>Belt</h4>
+                                                                        <li><img src="./assets/images/breweries/harvest-moon-brewing-company.png"
+                                                                                        alt="Harvest Moon Brewing Company"
+                                                                                        style="width:15%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="harvest-moon-brewing-company.html">Harvest
+                                                                                        Moon Brewing
+                                                                                        Company</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Bigfork-->
+                                                                <ul>
+                                                                        <h4>Bigfork</h4>
+                                                                        <li><img src="./assets/images/breweries/flathead-lake-brewing.png"
+                                                                                        alt="Flathead Lake Brewing"
+                                                                                        style="width:13%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="flathead-lake-brewing.html">Flathead
+                                                                                        Lake Brewing</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Big Sky-->
+                                                                <ul>
+                                                                        <h4>Big Sky</h4>
+                                                                        <li><img src="./assets/images/breweries/beehive-basin-brewery.png"
+                                                                                        alt="Beehive Basin Brewing"
+                                                                                        style="width:11%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="beehive-basin-brewery.html">Beehive
+                                                                                        Basin Brewery</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/choppers-grub-and-pub.png"
+                                                                                        alt="Choppers Grub and Pub"
+                                                                                        style="width:13%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="choppers-grub-and-pub.html">Choppers
+                                                                                        Grub and Pub</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/lone-peak-brewery.png"
+                                                                                        alt="Lone Peak Brewery"
+                                                                                        style="width:12%" ;>
+                                                                                &nbsp;<a href="lone-peak-brewery.html">Lone
+                                                                                        Peak Brewery</a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
 
-                </map>
-            </p>
-            <p>
-                <div class="row">
-                    <div class="column">
-                        <h2>Buy A Physical MT Brewery Passport Today!</h2>
-                        <a href="http://montanabrewerypassport.com/">
-                            <img src="./assets/images/paper-brew.png" alt="MT Brewery Passport" style="width:15%" ;></a>
-                    </div>
-                    <div class="column">
-                        <a href="list.html"><h2>View the Breweries on a List Based on Location Instead</h2><img src="./assets/images/list.png" alt="List of current Breweries" style="width:50%" ;></a>
-                    </div>
+
+                                                        <div class="column">
+                                                                <!--Billings-->
+                                                                <ul>
+                                                                        <h4>Billings</h4>
+                                                                        <li><img src="./assets/images/breweries/406-kitchen-and-tap-room.png"
+                                                                                        alt="406 Kitchen & Tap Room"
+                                                                                        style="width:15%" ;> &nbsp;<a
+                                                                                        href="406-kitchen-and-tap-room.html">406
+                                                                                        Kitchen & Tap Room</a> </li>
+                                                                        <li><img src="./assets/images/breweries/angry-hanks-microbrewery.png"
+                                                                                        alt="Angry Hanks Microbrewery"
+                                                                                        style="width:9%" ;> &nbsp;<a
+                                                                                        href="angry-hanks-microbrewery.html">Angry
+                                                                                        Hank's Microbrewery</a> </li>
+                                                                        <li><img src="./assets/images/breweries/asylum-distillery.png"
+                                                                                        alt="Asylum Distillery"
+                                                                                        style="width:9%" ;> &nbsp;<a
+                                                                                        href="asylum-distillery.html">Asylum
+                                                                                        Distillery</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/barMT.png"
+                                                                                        alt="Bar MT" style="width:10%"
+                                                                                        ;>
+                                                                                &nbsp;<a href="barMT.html">Bar MT</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/by-all-means-brewing.png"
+                                                                                        alt="By All Means Brewing"
+                                                                                        style="width:10%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="by-all-means-brewing.html">By
+                                                                                        All Means Brewing</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/canyon-creek-brewing.png"
+                                                                                        alt="Canyon Creek Brewing"
+                                                                                        style="width:10%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="canyon-creek-brewing.html">Canyon
+                                                                                        Creek Brewing</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/carters-brewery.png"
+                                                                                        alt="Carter's Brewery"
+                                                                                        style="width:10%" ;>
+                                                                                &nbsp;<a href="carters-brewery.html">Carter's
+                                                                                        Brewery</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/freefall-brewery.png"
+                                                                                        alt="Freefall Brewery"
+                                                                                        style="width:15%" ;>
+                                                                                &nbsp;<a href="freefall-brewery.html">Freefall
+                                                                                        Brewery</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/montana-brewing-company.png"
+                                                                                        alt="Montana Brewing Company"
+                                                                                        style="width:13%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="montana-brewing-company.html">Montana
+                                                                                        Brewing Company</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/thirsty-street-brewing-co.png"
+                                                                                        alt="Thirsty Street Brewing Co."
+                                                                                        style="width:13%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="thirsty-street-brewing-co.html">Thirsty
+                                                                                        Street Brewing Co.</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/uberbrew-superlative-beer.png"
+                                                                                        alt="Uberbrew Superlative Beer"
+                                                                                        style="width:13%" ;>
+                                                                                &nbsp;<a
+                                                                                        href="uberbrew-superlative-beer.html">Uberbrew
+                                                                                        Superlative Beer</a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                                <div class="row">
+                                                        <div class="column">
+                                                                <!--Black Eagle-->
+                                                                <ul>
+                                                                        <h4>Black Eagle</h4>
+                                                                        <li><img src="./assets/images/breweries/black-eagle-brewery.png"
+                                                                                        alt="Black Eagle Brewery"
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="black-eagle-brewery.html">Black
+                                                                                        Eagle
+                                                                                        Brewery</a></li>
+                                                                </ul>
+                                                                <!--Bonner-->
+                                                                <ul>
+                                                                        <h4>Bonner</h4>
+                                                                        <li><img src="./assets/images/breweries/kettlehouse-brewing-co.png"
+                                                                                        alt="Kettlehouse Brewing Co."
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="kettlehouse-brewing-co.html">Kettlehouse
+                                                                                        Brewing Co.</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Bozeman-->
+                                                                <ul>
+                                                                        <h4>Bozeman</h4>
+                                                                        <li><img src="./assets/images/breweries/bozeman-brewing-company.png"
+                                                                                        alt="Bozeman Brewing Company"
+                                                                                        style="width:14%" ;> &nbsp;<a
+                                                                                        href="bozeman-brewing-company.html">Bozeman
+                                                                                        Brewing Company</a></li>
+                                                                        <li><img src="./assets/images/breweries/bozeman-spirits.png"
+                                                                                        alt="Bozeman Spirits"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="bozeman-spirits.html">Bozeman
+                                                                                        Spirits</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/bridger-brewing.png"
+                                                                                        alt="Bridger Brewing"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="bridger-brewing.html">Bridger
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/bunkhouse-brewery.png"
+                                                                                        alt="Bunkhouse Brewery"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="bunkhouse-brewery.html">Bunkhouse
+                                                                                        Brewery</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/last-best-place-brewing-company.png"
+                                                                                        alt="Last Best Place Brewing Company"
+                                                                                        style="width:14%" ;> &nbsp;<a
+                                                                                        href="last-best-place-brewing-company.html">Last
+                                                                                        Best Place Brewing
+                                                                                        Company</a>
+                                                                        </li>
+                                                        </div>
+
+
+                                                        <div class="column">
+                                                                <h4>Bozeman</h4>
+                                                                <li><img src="./assets/images/breweries/map-brewing-co.png"
+                                                                                alt="Map Brewing Co." style="width:12%"
+                                                                                ;> &nbsp;<a
+                                                                                href="map-brewing-co.html">Map Brewing
+                                                                                Co.</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/mountains-walking-brewery-and-pub.png"
+                                                                                alt="Mountains Walking Brewery and Pub"
+                                                                                style="width:12%" ;> &nbsp;<a
+                                                                                href="mountains-walking-brewery-and-pub.html">Mountains
+                                                                                Walking Brewery and
+                                                                                Pub</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/nordic-brew-works.png"
+                                                                                alt="Nordic Brew Works"
+                                                                                style="width:50%" ;> &nbsp;<a
+                                                                                href="nordic-brew-works.html">Nordic
+                                                                                Brew
+                                                                                Works</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/outlaw-brewing.png"
+                                                                                alt="Outlaw Brewing" style="width:13%"
+                                                                                ;> &nbsp;<a
+                                                                                href="outlaw-brewing.html">Outlaw
+                                                                                Brewing</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/polar-brewing.png"
+                                                                                alt="Polar Brewing" style="width:10%" ;>
+                                                                        &nbsp;<a href="polar-brewing.html">Polar
+                                                                                Brewing</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/shine-beer-sanctury.png"
+                                                                                alt="Shine Beer Sanctury"
+                                                                                style="width:14%" ;> &nbsp;<a
+                                                                                href="shine-beer-sanctury.html">Shine
+                                                                                Beer
+                                                                                Sanctury</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/valhalla-meadery.png"
+                                                                                alt="Valhalla Meadery" style="width:14%"
+                                                                                ;> &nbsp;<a
+                                                                                href="valhalla-meadery.html">Valhalla
+                                                                                Meadery</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/zesty.png"
+                                                                                alt="Zesty" style="width:14%" ;>
+                                                                        &nbsp;<a href="zesty.html">Zesty</a>
+                                                                </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                                <div class="row">
+                                                        <div class="column">
+                                                                <!--Butte-->
+                                                                <ul>
+                                                                        <h4>Butte</h4>
+                                                                        <li><img src="./assets/images/breweries/butte-brewing-company.png"
+                                                                                        alt="Butte Brewing Company"
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="butte-brewing-company.html">Butte
+                                                                                        Brewing Company</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/quarry-brewing-llc.png"
+                                                                                        alt="Quarry Brewing LLC."
+                                                                                        style="width:17%" ;> &nbsp;<a
+                                                                                        href="quarry-brewing-llc.html">Quarry
+                                                                                        Brewing LLC.</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Coram-->
+                                                                <ul>
+                                                                        <h4>Coram</h4>
+                                                                        <li><img src="./assets/images/breweries/glacier-distilling.png"
+                                                                                        alt="Glacier Distilling"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="glacier-distilling.html">Glacier
+                                                                                        Distilling</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Cut Bank-->
+                                                                <ul>
+                                                                        <h4>Cut Bank</h4>
+                                                                        <li><img src="./assets/images/breweries/cut-bank-creek-brewery.png"
+                                                                                        alt="Cut Bank Brewery"
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="cut-bank-brewery.html">Cut
+                                                                                        Bank Brewery</a>
+                                                                        </li>
+                                                                </ul>
+
+                                                                <!--Darby-->
+                                                                <ul>
+                                                                        <h4>Darby</h4>
+                                                                        <li><img src="./assets/images/breweries/bandit-brewing-co.png"
+                                                                                        alt="Bandit Brewing Co"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="bandit-brewing-co.html">Bandit
+                                                                                        Brewing
+                                                                                        Co.</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Dillon-->
+                                                                <ul>
+                                                                        <h4>Dillon</h4>
+                                                                        <li><img src="./assets/images/breweries/beaverhead-brewing-company.png"
+                                                                                        alt="Beaverhead Brewing Company"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="beaverhead-brewing-company.html">Beaverhead
+                                                                                        Brewing Company</a></li>
+                                                                </ul>
+                                                                <!--Ennis-->
+                                                                <ul>
+                                                                        <h4>Ennis</h4>
+                                                                        <li><img src="./assets/images/breweries/burnt-tree-brewing.png"
+                                                                                        alt="Burnt Tree Brewing"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="burnt-tree-brewing.html">Burnt
+                                                                                        Tree
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/willies-distillery.png"
+                                                                                        alt="Willie's Distillery"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="willies-distillery.html">Willie's
+                                                                                        Distillery</a>
+                                                                        </li>
+                                                                </ul>
+
+                                                        </div>
+
+                                                        <div class="column">
+                                                                <!--Eureka-->
+                                                                <ul>
+                                                                        <h4>Eureka</h4>
+                                                                        <li><img src="./assets/images/breweries/koocanusa-brewery.png"
+                                                                                        alt="Koocanusa Brewery"
+                                                                                        style="width:20%" ;> &nbsp;<a
+                                                                                        href="koocanusa-brewery.html">Koocanusa
+                                                                                        Brewery</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Glasgow-->
+                                                                <ul>
+                                                                        <h4>Glasgow</h4>
+                                                                        <li><img src="./assets/images/breweries/busted-knuckle-brewery.png"
+                                                                                        alt="Busted Knuckle Brewery"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="busted-knuckle-brewery.html">Busted
+                                                                                        Knuckle Brewery</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Glendive-->
+                                                                <ul>
+                                                                        <h4>Glendive</h4>
+                                                                        <li><img src="./assets/images/breweries/cross-country-brewing.png"
+                                                                                        alt="Cross Country Brewing"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="cross-country-brewing.html">Cross
+                                                                                        Country Brewing</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Havre-->
+                                                                <ul>
+                                                                        <h4>Havre</h4>
+                                                                        <li><img src="./assets/images/breweries/triple-dog-brewing-co.png"
+                                                                                        alt="Triple Dog Brewing Co."
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="triple-dog-brewing-co.html">Triple
+                                                                                        Dog Brewing Co.</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/vizsla-brewing.png"
+                                                                                        alt="Vizla Brewing"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="vizsla-brewing.html">Vizla
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Great Falls-->
+                                                                <ul>
+                                                                        <h4>Great Falls</h4>
+                                                                        <li><img src="./assets/images/breweries/elevation-3330.png"
+                                                                                        alt="Elevation 3330"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="elevation-3330.html">Elevation
+                                                                                        3330</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/jeremiah-johnson-brewing-co.png"
+                                                                                        alt="Jeremiah Johnson Brewing Co."
+                                                                                        style="width:10%" ;> &nbsp;<a
+                                                                                        href="jeremiah-johnson-brewing-co.html">Jeremiah
+                                                                                        Johnson Brewing Co.</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/mighty-mo-brew-pub.png"
+                                                                                        alt="Mighty Mo Brew Pub"
+                                                                                        style="width:10%" ;> &nbsp;<a
+                                                                                        href="mighty-mo-brew-pub.html">Mighty
+                                                                                        Mo Brew
+                                                                                        Pub</a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+
+                                        <div class="mySlides fade">
+                                                <div class="row">
+                                                        <div class="column">
+                                                                <!--Hamilton-->
+                                                                <ul>
+                                                                        <h4>Hamilton</h4>
+                                                                        <li><img src="./assets/images/breweries/bitter-root-brewing.png"
+                                                                                        alt="Bitter Root Brewing"
+                                                                                        style="width:15%" ;> &nbsp;<a
+                                                                                        href="bitter-root-brewing.html">Bitter
+                                                                                        Root
+                                                                                        Brewing</a></li>
+                                                                        <li><img src="./assets/images/breweries/higherground-brewing-co.png"
+                                                                                        alt="Higherground Brewing Co."
+                                                                                        style="width:10%" ;> &nbsp;<a
+                                                                                        href="higherground-brewing-co.html">Higherground
+                                                                                        Brewing Co.</a></li>
+                                                                </ul>
+                                                                <!--Harlowton-->
+                                                                <ul>
+                                                                        <h4>Harlowton</h4>
+                                                                        <li><img src="./assets/images/breweries/gallys-brewing-co.png"
+                                                                                        alt="Gally's Brewing Co."
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="gallys-brewing-co.html">Gally's
+                                                                                        Brewing
+                                                                                        Co.</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Helena-->
+                                                                <ul>
+                                                                        <h4>Helena</h4>
+                                                                        <li><img src="./assets/images/breweries/blackfoot-river-brewing-company.png"
+                                                                                        alt="Blackfoot River Brewing Company"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="blackfoot-river-brewing-company.html">Blackfoot
+                                                                                        River Brewing
+                                                                                        Company</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/copper-furrow-brewing.png"
+                                                                                        alt="Copper Furrow Brewing"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="copper-furrow-brewing.html">Copper
+                                                                                        Furrow Brewing</a></li>
+                                                                        <li><img src="./assets/images/breweries/gulch-distillers.png"
+                                                                                        alt="Gulch Distillers"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="gulch-distillers.html">Gulch
+                                                                                        Distillers</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/headwaters-crafthouse.png"
+                                                                                        alt="Headwaters Crafthouse"
+                                                                                        style="width:15%" ;> &nbsp;<a
+                                                                                        href="headwaters-craft-house.html">Headwaters
+                                                                                        Crafthouse</a></li>
+                                                                        <li><img src="./assets/images/breweries/lewis-and-clark-brewing-co.png"
+                                                                                        alt="Lewis and Clark Brewing Co."
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="lewis-and-clark-brewing-co.html">Lewis
+                                                                                        and Clark Brewing Co.</a></li>
+                                                                        <li><img src="./assets/images/breweries/ten-mile-creek-brewing.png"
+                                                                                        alt="Ten Mile Creek Brewing"
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="ten-mile-creek-brewing.html">Ten
+                                                                                        Mile Creek Brewing</a></li>
+                                                                </ul>
+                                                        </div>
+
+
+                                                        <div class="column">
+                                                                <!--Kalispell-->
+                                                                <ul>
+                                                                        <h4>Kallispell</h4>
+                                                                        <li><img src="./assets/images/breweries/bias-brewing.png"
+                                                                                        alt="Bias Brewing Co."
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="bias-brewing.html">Bias
+                                                                                        Brewing</a></li>
+                                                                        <li><img src="./assets/images/breweries/big-mountain-ciderworks.png"
+                                                                                        alt="Big Mountain Ciderworks"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="big-mountain-ciderworks.html">Big
+                                                                                        Mountain Ciderworks</a></li>
+                                                                        <li><img src="./assets/images/breweries/brass-tap.png"
+                                                                                        alt="The Brass Tap"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="brass-tap.html">The Brass
+                                                                                        Tap</a></li>
+                                                                        <li><img src="./assets/images/breweries/kalispell-brewing-co.png"
+                                                                                        alt="Kalispell Brewing Co."
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="kalispell-brewing-co.html">Kalispell
+                                                                                        Brewing Co.</a></li>
+                                                                        <li><img src="./assets/images/breweries/sacred-waters-brewing-co.png"
+                                                                                        alt="Sacred Waters Brewing Co."
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="sacred-waters-brewing-co.html">Sacred
+                                                                                        Waters Brewing Co.</a></li>
+                                                                        <li><img src="./assets/images/breweries/sunrift-beer-company.png"
+                                                                                        alt="Sunrift Beer Company"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="sunrift-beer-company.html">Sunrift
+                                                                                        Beer
+                                                                                        Company</a></li>
+                                                                </ul>
+                                                                <!--Lakeside-->
+                                                                <ul>
+                                                                        <h4>Lakeside</h4>
+                                                                        <li><img src="./assets/images/breweries/tamarack-brewing-company.png"
+                                                                                        alt="Tamarack Brewing Company"
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="tamarack-brewing-company.html">Tamarack
+                                                                                        Brewing Company</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Laurel-->
+                                                                <ul>
+                                                                        <h4>Laurel</h4>
+                                                                        <li><img src="./assets/images/breweries/high-plains-brewing.png"
+                                                                                        alt="High Plains Brewing"
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="high-plains-brewing.html">High
+                                                                                        Plains
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Lewistown-->
+                                                                <ul>
+                                                                        <h4>Lewistown</h4>
+                                                                        <li><img src="./assets/images/breweries/big-spring-brewing.png"
+                                                                                        alt="Big Spring Brewing"
+                                                                                        style="width:14%" ;> &nbsp;<a
+                                                                                        href="big-spring-brewing.html">Big
+                                                                                        Spring
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Libby-->
+                                                                <ul>
+                                                                        <h4>Libby</h4>
+                                                                        <li><img src="./assets/images/breweries/cabinet-mountain.png"
+                                                                                        alt="Cabinet Mountain Brewing Co."
+                                                                                        style="width:15%" ;> &nbsp;<a
+                                                                                        href="cabinet-mountain.html">Cabinet
+                                                                                        Mountain Brewing
+                                                                                        Co.</a></li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                                <div class="row">
+                                                        <div class="column">
+                                                                <!--Livingston-->
+                                                                <ul>
+                                                                        <h4>Livingston</h4>
+                                                                        <li><img src="./assets/images/breweries/katabatic-brewing-company.png"
+                                                                                        alt="Katabatic Brewing Company"
+                                                                                        style="width:18%" ;> &nbsp;<a
+                                                                                        href="katabatic-brewing-company.html">Katabatic
+                                                                                        Brewing Company</a></li>
+                                                                        <li><img src="./assets/images/breweries/neptunes-brewery.png"
+                                                                                        alt="Neptune's Brewery"
+                                                                                        style="width:19%" ;> &nbsp;<a
+                                                                                        href="neptunes-brewery.html">Neptune's
+                                                                                        Brewery</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Lolo-->
+                                                                <ul>
+                                                                        <h4>Lolo</h4>
+                                                                        <li><img src="./assets/images/breweries/lolo-peak-brewing-co.png"
+                                                                                        alt="Lolo Peak Brewing Co."
+                                                                                        style="width:16%" ;> &nbsp;<a
+                                                                                        href="lolo-peak-brewing-co.html">Lolo
+                                                                                        Peak Brewing Co.</a></li>
+                                                                </ul>
+                                                                <!--Malta-->
+                                                                <ul>
+                                                                        <h4>Malta</h4>
+                                                                        <li><img src="./assets/images/breweries/blue-ridge-brewing.png"
+                                                                                        alt="Blue Ridge Brewing"
+                                                                                        style="width:18%" ;> &nbsp;<a
+                                                                                        href="blue-ridge-brewing.html">Blue
+                                                                                        Ridge
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Miles City-->
+                                                                <ul>
+                                                                        <h4>Miles City</h4>
+                                                                        <li><img src="./assets/images/breweries/otium-brewing.png"
+                                                                                        alt="Otium Brewing"
+                                                                                        style="width:14%" ;> &nbsp;<a
+                                                                                        href="otium-brewing.html">Otium
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/tilt-wurks-brewhouse-and-casino.png"
+                                                                                        alt="Tilt Wurks Brewhouse and Casino"
+                                                                                        style="width:14%" ;> &nbsp;<a
+                                                                                        href="tilt-wurks-brewhouse-and-casino.html">Tilt
+                                                                                        Wurks Brewhouse and
+                                                                                        Casino</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Missoula-->
+                                                                <ul>
+                                                                        <h4>Missoula</h4>
+                                                                        <li><img src="./assets/images/breweries/bayern-brewing.png"
+                                                                                        alt="Bayern Brewing"
+                                                                                        style="width:10%" ;> &nbsp;<a
+                                                                                        href="bayern-brewing.html">Bayern
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/big-sky-brewing-co.png"
+                                                                                        alt="Big Sky Brewing Co."
+                                                                                        style="width:10%" ;> &nbsp;<a
+                                                                                        href="big-sky-brewing-co.html">Big
+                                                                                        Sky Brewing Co.</a>
+                                                                        </li>
+                                                                        <li><img src="./assets/images/breweries/cambie.png"
+                                                                                        alt="Cambie" style="width:10%"
+                                                                                        ;>
+                                                                                &nbsp;<a href="cambie.html">Cambie</a>
+                                                                        </li>
+                                                        </div>
+
+
+                                                        <div class="column">
+                                                                <h4>Missoula</h4>
+                                                                <li><img src="./assets/images/breweries/conflux-brewing-co.png"
+                                                                                alt="Conflux Brewing Co."
+                                                                                style="width:12%" ;> &nbsp;<a
+                                                                                href="conflux-brewing-co.html">Conflux
+                                                                                Brewing Co.</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/cranky-sam-public-house.png"
+                                                                                alt="Cranky Sam Public House"
+                                                                                style="width:10%" ;> &nbsp;<a
+                                                                                href="cranky-sam-public-house.html">Cranky
+                                                                                Sam Public House</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/cymatic-fermentation-project.png"
+                                                                                alt="Cymatic Fermentation Project"
+                                                                                style="width:10%" ;> &nbsp;<a
+                                                                                href="cymatic-fermentation-project.html">Cymatic
+                                                                                Fermentation Project</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/draught-works-brewery.png"
+                                                                                alt="Draught Works Brewery"
+                                                                                style="width:10%" ;> &nbsp;<a
+                                                                                href="draught-works-brewery.html">Draught
+                                                                                Works Brewery</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/gild-brewing.png"
+                                                                                alt="GILD Brewing" style="width:10%" ;>
+                                                                        &nbsp;<a href="gild-brewing.html">GILD
+                                                                                Brewing</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/great-burn-brewing.png"
+                                                                                alt="Great Burn Brewing"
+                                                                                style="width:10%" ;> &nbsp;<a
+                                                                                href="great-burn-brewing.html">Great
+                                                                                Burn
+                                                                                Brewing</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/highlander-beer.png"
+                                                                                alt="Highlander Beer" style="width:12%"
+                                                                                ;> &nbsp;<a
+                                                                                href="highlander-beer.html">Highlander
+                                                                                Beer</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/imagine-nation-brewing-co.png"
+                                                                                alt="Imagine Nation Brewing Co."
+                                                                                style="width:9%" ;> &nbsp;<a
+                                                                                href="imagine-nation-brewing-co.html">Imagine
+                                                                                Nation Brewing Co.</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/kettlehouse-brewing-co.png"
+                                                                                alt="Kettlehouse Brewing Co."
+                                                                                style="width:12%" ;> &nbsp;<a
+                                                                                href="kettlehouse-brewing-co.html">Kettlehouse
+                                                                                Brewing Co.</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/oddpitch-brewing.png"
+                                                                                alt="OddPitch Brewing" style="width:12%"
+                                                                                ;> &nbsp;<a
+                                                                                href="oddpitch-brewing.html">OddPitch
+                                                                                Brewing</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/tamarack-brewing-company.png"
+                                                                                alt="Tamarack Brewing Company"
+                                                                                style="width:12%" ;> &nbsp;<a
+                                                                                href="tamarack-brewing-company.html">Tamarack
+                                                                                Brewing Company</a>
+                                                                </li>
+                                                                <li><img src="./assets/images/breweries/western-cider.png"
+                                                                                alt="Western Cider" style="width:12%" ;>
+                                                                        &nbsp;<a href="western-cider.html">Western
+                                                                                Cider</a>
+                                                                </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="mySlides fade">
+                                                <div class="row">
+                                                        <div class="column">
+                                                                <!--Philipsburg-->
+                                                                <ul>
+                                                                        <h4>Philipsburg</h4>
+                                                                        <li><img src="./assets/images/breweries/philipsburg-brewing-co.png"
+                                                                                        alt="Philipsburg Brewing Company"
+                                                                                        style="width:20%" ;> &nbsp;<a
+                                                                                        href="philipsburg-brewing-co.html">Philipsburg
+                                                                                        Brewing Company</a></li>
+                                                                </ul>
+                                                                <!--Polson-->
+                                                                <ul>
+                                                                        <h4>Polson</h4>
+                                                                        <li><img src="./assets/images/breweries/glacier-brewing-company.png"
+                                                                                        alt="Glacier Brewing Company"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="glacier-brewing-company.html">Glacier
+                                                                                        Brewing Company</a></li>
+                                                                </ul>
+                                                                <!--Red Lodge-->
+                                                                <ul>
+                                                                        <h4>Red Lodge</h4>
+                                                                        <li><img src="./assets/images/breweries/red-lodge-ales.png"
+                                                                                        alt="Red Lodge Ales"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="red-lodge-ales.html">Red
+                                                                                        Lodge Ales</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Sheridan-->
+                                                                <ul>
+                                                                        <h4>Sheridan</h4>
+                                                                        <li><img src="./assets/images/breweries/ruby-valley-brew.png"
+                                                                                        alt="Ruby Valley Brew"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="ruby-valley-brew.html">Ruby
+                                                                                        Valley
+                                                                                        Brew</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Sidney-->
+                                                                <ul>
+                                                                        <h4>Sidney</h4>
+                                                                        <li><img src="./assets/images/breweries/1035-brewing.png"
+                                                                                        alt="1035 Brewing"
+                                                                                        style="width:15%" ;> &nbsp;<a
+                                                                                        href="1035-brewing.html">1035
+                                                                                        Brewing</a></li>
+                                                                        <li><img src="./assets/images/breweries/meadowlark-brewing.png"
+                                                                                        alt="Meadowlark Brewing"
+                                                                                        style="width:12%" ;> &nbsp;<a
+                                                                                        href="meadowlark-brewing.html">Meadowlark
+                                                                                        Brewing</a>
+                                                                        </li>
+                                                                </ul>
+                                                                <!--Stevensville-->
+                                                                <ul>
+                                                                        <h4>Stevensville</h4>
+                                                                        <li><img src="./assets/images/breweries/blacksmith-brewing-company.png"
+                                                                                        alt="Blacksmith Brewering Company"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="blacksmith-brewing-company.html">Blacksmith
+                                                                                        Brewing Company</a></li>
+                                                                        <li><img src="./assets/images/breweries/wildwood-brewery.png"
+                                                                                        alt="Wildwood Brewery"
+                                                                                        style="width:11%" ;> &nbsp;<a
+                                                                                        href="wildwood-brewery.html">Wildwood
+                                                                                        Brewery</a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+
+
+                                                        <div class="column">
+                                                                <!--Thompson Falls-->
+                                                                <ul>
+                                                                        <h4>Thompson Falls</h4>
+                                                                        <li><img src="./assets/images/breweries/limberlost-brewing-co.png"
+                                                                                        alt="Limberlost Brewing Co."
+                                                                                        style="width:12%; margin-top:4%">
+                                                                                &nbsp;<a
+                                                                                        href="limberlost-brewing-co.html">Limberlost
+                                                                                        Brewing Co.</a></li>
+                                                                </ul>
+                                                                <!--Townsend-->
+                                                                <ul>
+                                                                        <h4>Townsend</h4>
+                                                                        <li><img src="./assets/images/breweries/canyon-ferry-brewing.png"
+                                                                                        alt="Canyon Ferry Brewing"
+                                                                                        style="width:15%" ;> &nbsp;<a
+                                                                                        href="canyon-ferry-brewing.html">Canyon
+                                                                                        Ferry
+                                                                                        Brewing</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                        <!--Whitefish-->
+                                                                        <h4>Whitefish</h4>
+                                                                        <li><img src="./assets/images/breweries/bonsai-brewing-project.png"
+                                                                                        alt="Bonsai Brewing Project"
+                                                                                        style="width:13%" ;> &nbsp;<a
+                                                                                        href="bonsai-brewing-project.html">Bonsai
+                                                                                        Brewing
+                                                                                        Project</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                        <!--White Sulphur Springs-->
+                                                                        <h4>White Sulphur Springs</h4>
+                                                                        <li><img src="./assets/images/breweries/2-basset-brewery.png"
+                                                                                        alt="2 Basset Brewery"
+                                                                                        style="width:13%; margin-top:4%">
+                                                                                &nbsp;<a href="2-basset-brewery.html">2
+                                                                                        Basset
+                                                                                        Brewery</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                        <!--Wibaux-->
+                                                                        <h4>Wibaux</h4>
+                                                                        <li><img src="./assets/images/breweries/beaver-creek-brewery.png"
+                                                                                        alt="Beaver Creek Brewery"
+                                                                                        style="width:10%" ;> &nbsp;<a
+                                                                                        href="beaver-creek-brewery.html">Beaver
+                                                                                        Creek
+                                                                                        Brewery</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                        <!--Wolf Point-->
+                                                                        <h4>Wolf Point</h4>
+                                                                        <li><img src="./assets/images/breweries/missouri-breaks-brewing.png"
+                                                                                        alt="Missouri Breaks Brewing"
+                                                                                        style="width:15%" ;> &nbsp;<a
+                                                                                        href="missouri-breaks-brewing.html">Missouri
+                                                                                        Breaks Brewing</a></li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+
+
+
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                        <br>
+
+                                        <!-- The dots/circles -->
+                                        <div style="text-align:center">
+                                                <span class="dot" onclick="currentSlide(1)"></span>
+                                                <span class="dot" onclick="currentSlide(2)"></span>
+                                                <span class="dot" onclick="currentSlide(3)"></span>
+                                                <span class="dot" onclick="currentSlide(4)"></span>
+                                                <span class="dot" onclick="currentSlide(5)"></span>
+                                                <span class="dot" onclick="currentSlide(6)"></span>
+                                        </div>
+
+
+                        </div>
                 </div>
-            </p>
         </div>
-    </div>
+        </div>
+        </p>
+        </div>
+
+
+
+
 
 </body>
 
 </html>
-
